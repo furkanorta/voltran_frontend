@@ -1,16 +1,38 @@
-# voltran_frontend
+Voltran AI Görüntü Düzenleyici - ÖN YÜZ (Frontend)
+Bu depo, Fal AI'ın görüntüden-görüntüye (Image-to-Image) dönüştürme servisi için geliştirilmiş web tabanlı kullanıcı arayüzünü (UI) içerir. Uygulama, Flutter (Dart) kullanılarak geliştirilmiş ve Firebase Hosting üzerinden yayımlanmıştır.
 
-A new Flutter project.
+🚀 Canlı Uygulama
+Uygulamanın çalışan versiyonuna bu adresten ulaşabilirsiniz:
+https://voltran-d0d69.web.app
 
-## Getting Started
+🛠️ Teknoloji Yığını
+Çerçeve: Flutter (3.x)
 
-This project is a starting point for a Flutter application.
+Dil: Dart
 
-A few resources to get you started if this is your first Flutter project:
+Bağımlılıklar: http (API çağrıları için), file_picker (dosya yükleme için)
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+Barındırma: Firebase Hosting
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+⚙️ Kurulum ve Başlatma (Geliştirme Ortamı)
+Bu uygulamayı yerel ortamınızda çalıştırmak için:
+
+Flutter SDK yüklü olduğundan emin olun.
+
+Depoyu klonlayın:
+
+git clone https://github.com/furkanorta/voltran_frontend
+cd voltran_frontend
+
+Bağımlılıkları yükleyin:
+
+flutter pub get
+
+Uygulamayı web modunda başlatın:
+
+flutter run -d chrome
+
+🔗 Backend Bağlantısı
+Uygulama, tüm AI işlemleri ve Fal AI anahtar yönetimi için ayrı bir Backend servisine güvenir. Backend URL'si, lib/main.dart dosyası içindeki backendUrl değişkeninde tanımlanmıştır.
+
+Backend Servisi: https://github.com/furkanorta/voltran_backend
